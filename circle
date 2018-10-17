@@ -1,0 +1,22 @@
+int x1 = 100;
+int y1 = 100;
+int x2 = 100;
+int y2 = 375;
+int x3 = 375;
+void setup(){
+  size(500,500);
+}
+
+void draw(){
+  background(0);
+  fill(100,100,100);
+  ellipse(y1,x1,100,100);
+  ellipse(y2,x2,100,100);
+  ellipse(x1,y2,100,100);
+  ellipse(x3,y2,100,100);
+  x1++;
+  y1++;
+  x2++;
+  y2--;
+  x3--;
+}
